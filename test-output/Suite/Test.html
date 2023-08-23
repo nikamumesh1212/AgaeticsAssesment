@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 23 18:18:48 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>266 seconds (266989 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testClasses.LoginTestClass.LoginBtndVisibility()'><b>LoginBtndVisibility</b><br>Test class: testClasses.LoginTestClass</td>
+<td></td>
+<td>2</td>
+<td>testClasses.LoginTestClass@548a24a</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.HowItWorks()'><b>HowItWorks</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.SignUpPageTest.PasswordFieldVisibility()'><b>PasswordFieldVisibility</b><br>Test class: testClasses.SignUpPageTest</td>
+<td></td>
+<td>2</td>
+<td>testClasses.SignUpPageTest@5f049ea1</td></tr>
+<tr>
+<td title='testClasses.HomePageContent.IntroTxtfield()'><b>IntroTxtfield</b><br>Test class: testClasses.HomePageContent</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageContent@6f10d5b6</td></tr>
+<tr>
+<td title='testClasses.SignUpPageTest.UserLogout()'><b>UserLogout</b><br>Test class: testClasses.SignUpPageTest</td>
+<td></td>
+<td>15</td>
+<td>testClasses.SignUpPageTest@5f049ea1</td></tr>
+<tr>
+<td title='testClasses.SignUpPageTest.CofirmPassfieldVisibility()'><b>CofirmPassfieldVisibility</b><br>Test class: testClasses.SignUpPageTest</td>
+<td></td>
+<td>2</td>
+<td>testClasses.SignUpPageTest@5f049ea1</td></tr>
+<tr>
+<td title='testClasses.HomePageContent.We_Rise_By_Lifting_Others_Field_Display()'><b>We_Rise_By_Lifting_Others_Field_Display</b><br>Test class: testClasses.HomePageContent</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageContent@6f10d5b6</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.Loginvisibility()'><b>Loginvisibility</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.LoginTestClass.UsernamefieldVisibility()'><b>UsernamefieldVisibility</b><br>Test class: testClasses.LoginTestClass</td>
+<td></td>
+<td>2</td>
+<td>testClasses.LoginTestClass@548a24a</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.Impact()'><b>Impact</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.Aboutus()'><b>Aboutus</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.HomePageContent.WaterMark_Txtfield()'><b>WaterMark_Txtfield</b><br>Test class: testClasses.HomePageContent</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageContent@6f10d5b6</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.signupClick()'><b>signupClick</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>2</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.LoginTestClass.ForgotPasstab()'><b>ForgotPasstab</b><br>Test class: testClasses.LoginTestClass</td>
+<td></td>
+<td>2</td>
+<td>testClasses.LoginTestClass@548a24a</td></tr>
+<tr>
+<td title='testClasses.LoginTestClass.UserRegister()'><b>UserRegister</b><br>Test class: testClasses.LoginTestClass</td>
+<td></td>
+<td>8</td>
+<td>testClasses.LoginTestClass@548a24a</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.AboutUsNavClick()'><b>AboutUsNavClick</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>2</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.ImpactNavClick()'><b>ImpactNavClick</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>2</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.HomePageContent.ImapctHeading_Txtfield()'><b>ImapctHeading_Txtfield</b><br>Test class: testClasses.HomePageContent</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageContent@6f10d5b6</td></tr>
+<tr>
+<td title='testClasses.LoginTestClass.PasswordfieldVisibility()'><b>PasswordfieldVisibility</b><br>Test class: testClasses.LoginTestClass</td>
+<td></td>
+<td>2</td>
+<td>testClasses.LoginTestClass@548a24a</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.HowItWorksNavClick()'><b>HowItWorksNavClick</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>2</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.HomePageContent.BrowserTablefield()'><b>BrowserTablefield</b><br>Test class: testClasses.HomePageContent</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageContent@6f10d5b6</td></tr>
+<tr>
+<td title='testClasses.SignUpPageTest.NameFieldVisibility()'><b>NameFieldVisibility</b><br>Test class: testClasses.SignUpPageTest</td>
+<td></td>
+<td>2</td>
+<td>testClasses.SignUpPageTest@5f049ea1</td></tr>
+<tr>
+<td title='testClasses.HomePageContent.ShowMoreLinkedTxt()'><b>ShowMoreLinkedTxt</b><br>Test class: testClasses.HomePageContent</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageContent@6f10d5b6</td></tr>
+<tr>
+<td title='testClasses.HomePageContent.SimpleTxtfield()'><b>SimpleTxtfield</b><br>Test class: testClasses.HomePageContent</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageContent@6f10d5b6</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.Logo()'><b>Logo</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.SignUpPageTest.UserRegister()'><b>UserRegister</b><br>Test class: testClasses.SignUpPageTest</td>
+<td></td>
+<td>9</td>
+<td>testClasses.SignUpPageTest@5f049ea1</td></tr>
+<tr>
+<td title='testClasses.HomePageContent.MakeAnImpact_Txtfield()'><b>MakeAnImpact_Txtfield</b><br>Test class: testClasses.HomePageContent</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageContent@6f10d5b6</td></tr>
+<tr>
+<td title='testClasses.HomePageContent.signoutBtn2field()'><b>signoutBtn2field</b><br>Test class: testClasses.HomePageContent</td>
+<td></td>
+<td>0</td>
+<td>testClasses.HomePageContent@6f10d5b6</td></tr>
+<tr>
+<td title='testClasses.SignUpPageTest.EmailFieldVisibility()'><b>EmailFieldVisibility</b><br>Test class: testClasses.SignUpPageTest</td>
+<td></td>
+<td>2</td>
+<td>testClasses.SignUpPageTest@5f049ea1</td></tr>
+<tr>
+<td title='testClasses.HomePageHeader.LoginBtnClick()'><b>LoginBtnClick</b><br>Test class: testClasses.HomePageHeader</td>
+<td></td>
+<td>2</td>
+<td>testClasses.HomePageHeader@433defed</td></tr>
+<tr>
+<td title='testClasses.SignUpPageTest.RegisterBtnVisibility()'><b>RegisterBtnVisibility</b><br>Test class: testClasses.SignUpPageTest</td>
+<td></td>
+<td>2</td>
+<td>testClasses.SignUpPageTest@5f049ea1</td></tr>
+</table><p>
+</body>
+</html>
